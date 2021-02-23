@@ -4,6 +4,7 @@ const Bodies = Matter.Bodies;
 var engine, world;
 var box1,box2,box3,box4,box5;
 var log;
+var circle;
 
 
 function setup(){
@@ -18,7 +19,7 @@ function setup(){
     box5 = new Box(810,160,80,80);
     ground = new Ground(600,height,1200,20);
     log = new Log(810,260,100,PI/2);
-    
+    circle= new Circle(785,340,100)
     
 }
 
@@ -35,6 +36,7 @@ function draw(){
      box3.display(); 
      box4.display();
      box5.display();
+     circle.display()
 	 
 
 }
